@@ -4,16 +4,12 @@ In the dotfiles directory are my configuration files for zsh and emacs, my shell
 
 In the html directory, and its subdirectory cgi-bin, are the following scripts:
 
-index.php: Calls python scripts with parameters related to the browser which requested the page, and uses the python
-output to display the number of visitors and some information about the user-agents that the website has seen.
+index.php: Calls python scripts with parameters related to the browser which requested the page, and uses the python output to display the number of visitors and some information about the user-agents that the website has seen.
 
-count.cgi: A python script that reads from count.txt to keep track of how many times the page has been loaded.
-It would be preferable to use a database for such purposes, but static files seem to play nicely with apache.
+count.cgi: A python script that reads from count.txt to keep track of how many times the page has been loaded. It would be preferable to use a database for such purposes, but static files seem to play nicely with apache.
 
-agents.cgi: A python script that loads data from agents.p, a pickled python dictionary with all of the user agents of
-previous requests, outputs some information about the agents handled thus far, and updates agents.p.
+agents.cgi: A python script that loads data from agents.p, a pickled python dictionary with all of the user agents of previous requests, outputs some information about the agents handled thus far, and updates agents.p.
 
 agents.p and count.txt: Store information related to usage for use with the python scripts.
 
-This public directory means that any other student could easily copy my source, OPEN SOURCE 4EVA but academic honesty
-takes precidence. Do work!
+This public directory means that any other student could easily copy my source, OPEN SOURCE 4EVA but academic honesty takes precidence. Do work!
